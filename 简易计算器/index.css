@@ -1,0 +1,87 @@
+.container {
+    width: 400px;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #4e4f9d;
+}
+
+.header {
+    height: 140px;
+    background-color: #a5a7db;
+    position: relative;
+}
+
+.header-value {
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    height: 48px;
+    line-height: 48px;
+    text-align: right;
+    font-size: 36px;
+    color: #fff;
+}
+
+.main {
+    padding: 20px 10px 0 10px;
+    overflow: hidden;
+}
+
+.main-list{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+.main-list .btn {
+    display: inline-block;
+    width: 80px;
+    height:60px;
+    border-radius: 60px;
+    background-color: #e0d3e9;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    color: #5e2789;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.main .btn:last-child {
+    margin-right: 0px;
+}
+
+.nums-list {
+    width: 280px;
+    float: left;;
+}
+
+.nums-list .btn {
+    background-color: #4e509d;
+    color: #fff;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nums-list .btn.clear {
+    background-color: #bd8d2b;
+}
+
+.equalBtn {
+    float: left;
+    width: 80px;
+    margin-left: 0;
+    height: 300px;
+    border-radius: 60px;
+    border: none;
+    background-color: #219097;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
