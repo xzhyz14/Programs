@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper为映射的根节点 -->
+<!-- namespace制定dao接口的完整类名 -->
+<mapper namespace="org.example.User">
+    <!--     id-接口中的方法名;parameterType-传入的参数类型;resultType-返回实体类对象，使用包.类名 -->
+    <select id="findById" parameterType="int" resultType="org.example.User">
+        select *
+        from users
+        where uid = #{id};
+    </select>
+
+    <select id="findAll" parameterType="org.example.User" resultType="org.example.User">
+        select * from users;
+    </select>
+
+    <insert id="insertUser" parameterType="org.example.User">
+        insert into users values (#{uid},#{uname},#{uage});
+    </insert>
+
+    <update id="updateByName" parameterType="org.example.User">
+        UPDATE users
+        set uage = #{uage}
+        where uname = #{uname};
+    </update>
+
+    <delete id="deleteByName" parameterType="org.example.User">
+        delete from users
+        WHERE uname = #{uname};
+    </delete>
+</mapper>
+
